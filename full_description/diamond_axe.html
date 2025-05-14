@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecraft Diamond Axe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="items.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="../mainmenu1.html" class="nav-link">Home</a>
+            <a href="../contactus.html" class="nav-link">Contact Us</a>   
+            <a href="../aboutus.html" class="nav-link">About Us</a>  
+            <a href="../shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="../LoginPage.html">Log in or Create account?</a>
+                <a href="../settings.html">Settings</a>
+                <a href="../orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>
+  <div class="container">
+    <div class="image-gallery">
+      <div class="thumbnails">
+        <img src="../images/netherite-chestplate-side.png" alt="Side View">
+        <img src="../images/Armor_Stand_with_Netherite_Armor_BE.webp" alt="On Armor Stand">
+        <img src="../images/Steve_in_netherite_armor.png" alt="Player Wearing">
+      </div>
+      <div class="main-image">
+        <img src="../images/Diamond_Axe_JE3_BE3.png" alt="Diamond Axe">
+      </div>
+    </div>
+    <div class="product-info">
+      <h1 class="product-title">Diamond Axe</h1>
+      <div class="price">₱399</div>
+
+      <div class="quantity">
+        Quantity:
+        <button>-</button>
+        <input type="text" value="1">
+        <button>+</button>
+      </div>
+
+      <div class="order">
+      <button><a href="../orders.html">ADD TO CART</a></button>
+      <button><a href="../payment.html">BUY NOW</a></button>
+      </div>
+
+      <div class="product-details">
+        <h2>Product Details</h2>
+        <p>Chop through enemies or trees in style! The Minecraft Diamond Axe is a symbol of power, precision, and pixel-perfect craftsmanship. Whether you're harvesting logs or engaging in epic PvP battles, this replica captures the essence of one of Minecraft’s most iconic tools. Ideal for display, cosplay, or imaginative play. Recommended for adventurers ages 3+.</p>
+        <ul>
+          <li>ICONIC TOOL: Designed just like the Diamond Axe in Minecraft</li>
+          <li>COLLECTIBLE SIZE: Measures approx. 15 inches — perfectly scaled for display</li>
+          <li>DURABLE DESIGN: Crafted from premium materials to withstand your wildest builds.</li>
+          <li>PERFECT FOR COSPLAY: Lightweight and accurate for any Minecraft costume.</li>
+          <li>FAN FAVORITE: A must-have for players and collectors alike.</li>
+
+        </ul>
+      </div>
+
+      <div class="ordering-info">
+        <h2>Ordering Information</h2>
+        <ul>
+          <li><strong>Return Policy:</strong> 30-day return guarantee.</li>
+          <li><strong>Shipping:</strong> Ships in 2 business days.</li>
+          <li><strong>Availability:</strong> Ships internationally.</li>
+          <li><strong>Shipping Policy:</strong> <a href="#" style="color:#0f0; text-decoration: underline;">Read here</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-promo">
+    Get 10% Off
+  </div>
+  
+<script>
+function toggleBurgerMenu() {
+    var menu = document.getElementById("burgerDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.burger-menu')) {
+        var dropdown = document.getElementById("burgerDropdown");
+        if (dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
