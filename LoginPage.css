@@ -1,0 +1,233 @@
+  body {
+    font-family: 'Minecraftia';
+    background: url('images/newdirt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: -10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Moves items to the right */
+    padding: 10px 20px;
+    font-size: 20px;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    width: 150px;
+    margin-left: 15px;
+    height: auto;
+  }
+  
+  .logo {
+    position: fixed; 
+    top: 7px; /* Adjust distance from top */
+    left: 20px;
+    width: 120px;
+    height: auto;
+    z-index: 1001; /* Keeps it above other content */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    background: transparent; /* Fully transparent */
+  }
+  
+  .nav-link {
+    color: inherit;       /* Inherit the color from parent */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Style the dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown button */
+  .dropbtn {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Minecraftia';
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  /* Dropdown links */
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Add hover effect */
+  .dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Style for the burger menu */
+  .burger-menu {
+    font-size: 30px;  /* Adjust to a more reasonable size */
+    display: block !important; /* Force it to be visible */
+    position: relative; /* Ensure it's positioned properly */
+    margin-left: auto; /* Push it to the right */
+    right: 20px;  /* Move it slightly left */
+    top: 2px;  /* Keep it in place */
+    z-index: 9999;
+    background-color: #2a2a2a;
+    color: white;
+  }
+  
+  /* Dropdown menu (hidden by default) */
+  .burger-dropdown {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  /* Dropdown links */
+  .burger-dropdown a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Hover effect */
+  .burger-dropdown a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .account-icon, .burger-menu {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .border {
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 350px;
+    margin-top: 60px;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+  }
+
+  .password-container {
+    position: relative;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 15%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .rememberme {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .login, .social {
+    font-family: roboto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .login {
+    background-color: blue;
+    color: white;
+  }
+  .login:hover {
+    background-color: royalblue;
+  }
+
+  .social img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .facebook {
+    background-color: navy;
+    color: white;
+  }
+  .facebook:hover {
+    background-color: blue;
+  }
+
+  .google {
+    background-color: red;
+    color: white;
+  }
+  .google:hover {
+    background-color: crimson;
+  }

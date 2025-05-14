@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPCRAFT CART</title>
+    <link rel="stylesheet" href="orders.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="mainmenu1.html" class="nav-link">Home</a>
+            <a href="contactus.html" class="nav-link">Contact Us</a>   
+            <a href="aboutus.html" class="nav-link">About Us</a>  
+            <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="LoginPage.html">Log in or Create account?</a>
+                <a href="settings.html">Settings</a>
+                <a href="orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>
+<div class="main-content">
+  <div class="cart-container">
+    <!-- Left Section -->
+    <div class="cart-left">
+      <div class="cart-header">
+        <label><input type="checkbox" /> SELECT ALL</label>
+        <button class="delete-btn">🗑 DELETE</button>
+      </div>
+      <div class="cart-items">
+        <!-- Item Card -->
+         <div class="cart-item">
+            <input type="checkbox" />
+            <img src="images/Netherite_Chestplate_JE2_BE1.png" alt="Netherite Chestplate" />
+            <div class="item-details">
+              <h3>Netherite Chestplate <span>₱100.00</span></h3>
+              <div class="meta">
+                <span class="star">★4.9</span>
+                <span class="sold">Sold: 3,831</span>
+                <div class="qty">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Add more cart-item divs as needed -->
+        <div class="cart-item">
+          <input type="checkbox" />
+          <img src="images/elytra.png" alt="Elytra" />
+          <div class="item-details">
+            <h3>Red Bed <span>₱680.00</span></h3>
+            <div class="meta">
+              <span class="star">★4.9</span>
+              <span class="sold">Sold: 1825</span>
+              <div class="qty">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <input type="checkbox" />
+          <img src="images/Enchanted_Netherite_Sword.webp" alt="Enchanted Netherite Sword" />
+          <div class="item-details">
+            <h3>Diamond <span>₱899</span></h3>
+            <div class="meta">
+              <span class="star">★5</span>
+              <span class="sold">Sold: 3,831</span>
+              <div class="qty">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cart-item divs as needed -->
+
+        <div class="cart-item">
+          <input type="checkbox" />
+          <img src="images/enchanted_golden_apple.png" alt="Enchanted Golden Apple" />
+          <div class="item-details">
+            <h3>Enchanted Golden Apple <span>₱500</span></h3>
+            <div class="meta">
+              <span class="star">★4.9</span>
+              <span class="sold">Sold: 3,831</span>
+              <div class="qty">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cart-item divs as needed -->
+         <!-- Add more cart-item divs as needed -->
+
+        <div class="cart-item">
+            <input type="checkbox" />
+            <img src="images/Diamond_Axe_JE3_BE3.png" alt="Diamond Axe" />
+            <div class="item-details">
+              <h3>Diamond Axe<span>₱400</span></h3>
+              <div class="meta">
+                <span class="star">★4.9</span>
+                <span class="sold">Sold: 1123</span>
+                <div class="qty">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Add more cart-item divs as needed -->
+           <!-- Add more cart-item divs as needed -->
+
+        <div class="cart-item">
+            <input type="checkbox" />
+            <img src="images/fishing_rod.png" alt="Fishing Rod" />
+            <div class="item-details">
+              <h3>Fishing Rod<span>₱350</span></h3>
+              <div class="meta">
+                <span class="star">★4.1</span>
+                <span class="sold">Sold: 1024</span>
+                <div class="qty">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Add more cart-item divs as needed -->
+           <!-- Add more cart-item divs as needed -->
+
+        <div class="cart-item">
+            <input type="checkbox" />
+            <img src="images/Netherite_Pickaxe_JE3.png" alt="Netherite Pickaxe" />
+            <div class="item-details">
+              <h3>Netherite Pickaxe <span>₱450</span></h3>
+              <div class="meta">
+                <span class="star">★4.9</span>
+                <span class="sold">Sold: 1173</span>
+                <div class="qty">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Add more cart-item divs as needed --><!-- Add more cart-item divs as needed -->
+
+          <div class="cart-item">
+            <input type="checkbox" />
+            <img src="images/emerald.png" alt="Emerald" />
+            <div class="item-details">
+              <h3>Emerald <span>₱60</span></h3>
+              <div class="meta">
+                <span class="star">★4.9</span>
+                <span class="sold">Sold: 1782</span>
+                <div class="qty">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <input type="checkbox" />
+            <div class="item-details">
+              <div class="meta">
+                <span class="star">_________________________________________________________________________________________________________________________</span>
+                <span class="sold"></span>
+                <div class="qty">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more cart-item divs as needed -->
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="cart-right">
+      <h2>Purchase Now!</h2>
+      <input type="text" placeholder="" />
+      <div class="summary">
+        <p>Voucher <span>0.00</span></p>
+        <p>Total <span>0.00</span></p>
+      </div>
+      <button class="buy-btn">BUY NOW</button>
+    </div>
+  </div>
+</div>  
+<script>
+function toggleBurgerMenu() {
+    var menu = document.getElementById("burgerDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.burger-menu')) {
+        var dropdown = document.getElementById("burgerDropdown");
+        if (dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+<footer>
+  <div class="footer-section">
+    <div class="footer-links">
+      <a href="#">Terms and Conditions</a>
+    </div>
+    <p class="copyright">© 2025 SHOPCRAFT.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+</html>

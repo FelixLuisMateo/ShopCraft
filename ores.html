@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools and Utilities</title>
+    <link rel="stylesheet" href="combat.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="mainmenu1.html" class="nav-link">Home</a>
+            <a href="contactus.html" class="nav-link">Contact Us</a>   
+            <a href="aboutus.html" class="nav-link">About Us</a>  
+            <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="LoginPage.html">Log in or Create account?</a>
+                <a href="settings.html">Settings</a>
+                <a href="orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>
+
+<div class="combat-banner">
+    <h1>ORES</h1>
+</div>
+
+<div class="combat-box">
+    <h2>ORES</h2>
+    <div class="item-row">
+        <!-- First Column -->
+        <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card epic">
+                    <div class="item-header">
+                        <img src="images/netherite_ingot.png" alt="Netherite Ingot">
+                        <strong>Netherite Ingot</strong>
+                    </div>
+                    <strong>Price: ₱90<br></strong>
+                    <strong>⭐4.6 1482 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card epic">
+                    <div class="item-header">
+                        <img src="images/Ancient_Debris_JE1_BE1.webp" alt="Ancient Debris">
+                        <strong>Ancient Debris</strong>
+                    </div>
+                    <strong>Price: ₱70<br></strong>
+                    <strong>⭐3.7 943 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card epic">
+                    <div class="item-header">
+                        <img src="images/Netherite_Scrap_JE2_BE1.webp" alt="Netherite Scrap">
+                        <strong>Netherite Scrap</strong>
+                    </div>
+                    <strong>Price: ₱80<br></strong>
+                    <strong>⭐4.2 1381 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card epic">
+                    <div class="item-header">
+                        <img src="images/Amethyst_Shard_JE2_BE1.webp" alt="Amethyst Shard">
+                        <strong>Amethyst Shard</strong>
+                    </div>
+                    <strong>Price: ₱70<br></strong>
+                    <strong>⭐3.5 728 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+            <!-- future item -->
+        </div>
+
+        <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card epic">
+                    <div class="item-header">
+                        <img src="images/PrismarineCrystalNew.webp" alt="Prismarine Crystals">
+                        <strong>Prismarine Crystals</strong>
+                    </div>
+                    <strong>Price: ₱80<br></strong>
+                    <strong>⭐4.1 937 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+            <!-- Copy From Below -->
+        <!-- First Column -->
+        <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/diamond.png" alt="Diamond">
+                        <strong>Diamond</strong>
+                    </div>
+                    <strong>Price: ₱90<br></strong>
+                    <strong>⭐4.4 1782 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/emerald.png" alt="Emerald">
+                        <strong>Emerald</strong>
+                    </div>
+                    <strong>Price: ₱60<br></strong>
+                    <strong>⭐4.9 2736 Sold  <br> </strong>
+                    <button><a href="../mine/full_description/emerald.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/Raw_Gold_JE3_BE2.webp" alt="Raw Gold">
+                        <strong>Raw Gold</strong>
+                    </div>
+                    <strong>Price: ₱40<br></strong>
+                    <strong>⭐4.1 1079 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/gold_ingot.png" alt="Gold Ingot">
+                        <strong>Gold Ingot</strong>
+                    </div>
+                    <strong>Price: ₱60<br></strong>
+                    <strong>⭐4.5 1967 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+                <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/lapiz_lazuli.png" alt="Lapiz Lazuli">
+                        <strong>Lapiz Lazuli</strong>
+                    </div>
+                    <strong>Price: ₱80<br></strong>
+                    <strong>⭐4.9 2678 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+         <!-- Copy From Above-->
+        <!-- First Column -->
+        <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/iron_ingot.png" alt="Iron Ingot">
+                        <strong>Iron Ingot</strong>
+                    </div>
+                    <strong>Price: ₱60<br></strong>
+                    <strong>⭐4.9 2423 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Raw_Iron_JE3_BE2.webp" alt="Raw Iron">
+                        <strong>Raw Iron</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐3.1 419 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/redstone_dust.png" alt="Redstone Dust">
+                        <strong>Redstone Dust</strong>
+                    </div>
+                    <strong>Price: ₱50<br></strong>
+                    <strong>⭐4.4 1769 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Copper_Ingot_JE2_BE1.webp" alt="Copper Ingot">
+                        <strong>Copper Ingot</strong>
+                    </div>
+                    <strong>Price: ₱40<br></strong>
+                    <strong>⭐3.1 539 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+            <!-- future item -->
+        </div>
+
+        <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Raw_Copper_JE3_BE2.webp" alt="Raw Copper">
+                        <strong>Raw Copper</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐2.8 389 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+                <!-- Last Column -->
+         <!-- Copy From Above-->
+         <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/PrismarineShardNew.webp" alt="Prismarine Shards">
+                        <strong>Prismarine Shards</strong>
+                    </div>
+                    <strong>Price: ₱50<br></strong>
+                    <strong>⭐3.5 945 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Coal.webp" alt="Coal">
+                        <strong>Coal</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.9 2489 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/charcoal.png" alt="Charcoal">
+                        <strong>Charcoal</strong>
+                    </div>
+                    <strong>Price: ₱40<br></strong>
+                    <strong>⭐4.9 2654 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Nether_Quartz_JE2_BE2.webp" alt="Nether Quartz">
+                        <strong>Nether Quartz</strong>
+                    </div>
+                    <strong>Price: ₱80<br></strong>
+                    <strong>⭐4.7 1049 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+            <!-- future item -->
+        </div>
+
+        <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Glowstone_Dust_JE2_BE2.webp" alt="Glowstone Dust">
+                        <strong>Glowstone Dust</strong>
+                    </div>
+                    <strong>Price: ₱50<br></strong>
+                    <strong>⭐4.2 983 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+                <!-- Last Column -->
+    </div>
+</div>
+<script>
+function toggleBurgerMenu() {
+    var menu = document.getElementById("burgerDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.burger-menu')) {
+        var dropdown = document.getElementById("burgerDropdown");
+        if (dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+<footer>
+    <div class="footer-section">
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+      </div>
+      <p class="copyright">© 2025 SHOPCRAFT.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools and Utilities</title>
+    <link rel="stylesheet" href="combat.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="mainmenu1.html" class="nav-link">Home</a>
+            <a href="contactus.html" class="nav-link">Contact Us</a>   
+            <a href="aboutus.html" class="nav-link">About Us</a>  
+            <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="LoginPage.html">Log in or Create account?</a>
+                <a href="settings.html">Settings</a>
+                <a href="orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>
+
+<div class="combat-banner">
+    <h1>FOODS AND DRINKS</h1>
+</div>
+
+<div class="combat-box">
+    <h2>FOODS</h2>
+    <div class="item-row">
+        <!-- First Column -->
+        <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card epic">
+                    <div class="item-header">
+                        <img src="images/enchanted_golden_apple.png" alt="Enchanted Golden Apple">
+                        <strong>Enchanted Golden Apple</strong>
+                    </div>
+                    <strong>Price: ₱100<br></strong>
+                    <strong>⭐4.9 1679 Sold  <br> </strong>
+                    <button><a href="../mine/full_description/enchantedapple.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/Golden_Carrot_JE4_BE2.webp" alt="Golden Carrot">
+                        <strong>Golden Carrot</strong>
+                    </div>
+                    <strong>Price: ₱80<br></strong>
+                    <strong>⭐4.2 1247 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/golden_apple.png" alt="Golden Apple">
+                        <strong>Golden Apple</strong>
+                    </div>
+                    <strong>Price: ₱80<br></strong>
+                    <strong>⭐4.6 1426 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card common">
+                    <div class="item-header">
+                        <img src="images/carrot.png" alt="Carrot">
+                        <strong>Carrot</strong>
+                    </div>
+                    <strong>Price: ₱20<br></strong>
+                    <strong>⭐4.1 982 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+            <!-- future item -->
+        </div>
+
+        <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card epic">
+                    <div class="item-header">
+                        <img src="images/Suspicious_Stew_JE1_BE1.webp" alt="Suspicious Stew">
+                        <strong>Suspicious Stew</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐3.7 751 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+            <!-- Copy From Below -->
+        <!-- First Column -->
+        <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card common">
+                    <div class="item-header">
+                        <img src="images/potato.png" alt="Potato">
+                        <strong>Potato</strong>
+                    </div>
+                    <strong>Price: ₱20<br></strong>
+                    <strong>⭐4.6 1089 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card common">
+                    <div class="item-header">
+                        <img src="images/Baked_Potato_JE4_BE2.webp" alt="Cooked Potato">
+                        <strong>Cooked Potato</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.2 1278 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Cookie_JE2_BE2.webp" alt="Cookie">
+                        <strong>Cookie</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.7 1026 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Bread_JE3_BE3.webp" alt="Bread">
+                        <strong>Bread</strong>
+                    </div>
+                    <strong>Price: ₱20<br></strong>
+                    <strong>⭐4.1 927 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+                <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card rare">
+                    <div class="item-header">
+                        <img src="images/cake.png" alt="Cake">
+                        <strong>Cake</strong>
+                    </div>
+                    <strong>Price: ₱40<br></strong>
+                    <strong>⭐4.4 1077 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+         <!-- Copy From Above-->
+        <!-- First Column -->
+        <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/steak.png" alt="Cooked Steak">
+                        <strong>Cooked Steak</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.5 1344 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/cooked_porkchop.png" alt="Cooked Porkchop">
+                        <strong>Cooked Porkchop</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.9 2048 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/cooked_mutton.png" alt="Cooked Mutton">
+                        <strong>Cooke Mutton</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.1 1014 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/cooked_rabbit.png" alt="Cooked Rabbit">
+                        <strong>Cooked Rabbit</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.2 1099 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+            <!-- future item -->
+        </div>
+
+        <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/cooked_salmon.png" alt="Cooked Salmon">
+                        <strong>Cooked Salmon</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.4 1272 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+                <!-- Last Column -->
+         <!-- Copy From Above-->
+         <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Cooked_Cod_JE4_BE3.webp" alt="Cooked Cod">
+                        <strong>Cooked Cod</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.2 1019 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card common">
+                    <div class="item-header">
+                        <img src="images/slice_melon.png" alt="Melon Slice">
+                        <strong>Melon Slice</strong>
+                    </div>
+                    <strong>Price: ₱20<br></strong>
+                    <strong>⭐3.7 914 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/pumpkin_pai.png" alt="Pumpkin Pie">
+                        <strong>Pumpkin Pie</strong>
+                    </div>
+                    <strong>Price: ₱40<br></strong>
+                    <strong>⭐4.4 1348 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card common">
+                    <div class="item-header">
+                        <img src="images/Carved_Pumpkin_29_JE5.webp" alt="Pumpkin">
+                        <strong>Pumpkin</strong>
+                    </div>
+                    <strong>Price: ₱20<br></strong>
+                    <strong>⭐3.8 728 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+            <!-- future item -->
+        </div>
+
+        <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card common">
+                    <div class="item-header">
+                        <img src="images/apple.png" alt="Apple">
+                        <strong>Apple</strong>
+                    </div>
+                    <strong>Price: ₱15<br></strong>
+                    <strong>⭐4.9 2894 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+                <!-- Last Column -->
+         <!-- Copy From Above-->
+           <!-- Copy From Above-->
+         <div class="first-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Mushroom_Stew_JE2_BE2.webp" alt="Mushroom Stew">
+                        <strong>Mushroom Stew</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.1 1078 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Second Column -->
+        <div class="second-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Beetroot_Soup_JE2_BE2.webp" alt="Beetroot Soup">
+                        <strong>Beetroot Soup</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐3.9 725 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Center Column -->
+        <div class="center-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Chorus_Fruit_JE2_BE2.webp" alt="Chorus Fruit">
+                        <strong>Chorus Fruit</strong>
+                    </div>
+                    <strong>Price: ₱20<br></strong>
+                    <strong>⭐3.4 821 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+
+        <!-- Add here later -->
+        <!-- Fourth Column -->
+        <div class="fourth-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Sweet_Berries_JE1_BE1.webp" alt="Sweet Berries">
+                        <strong>Sweet Berries</strong>
+                    </div>
+                    <strong>Price: ₱20<br></strong>
+                    <strong>⭐3.9 1089 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+            <!-- future item -->
+        </div>
+
+        <!-- Last Column -->
+        <div class="last-column">
+            <label class="item-wrapper">
+                <input type="radio" name="item">
+                <div class="item-card uncommon">
+                    <div class="item-header">
+                        <img src="images/Glow_Berries_JE1_BE1.webp" alt="Glow Berries">
+                        <strong>Glow Berries</strong>
+                    </div>
+                    <strong>Price: ₱30<br></strong>
+                    <strong>⭐4.3 1174 Sold  <br> </strong>
+                    <button><a href="orders.html">View More</a></button>
+                </div>
+            </label>
+        </div>
+                <!-- Last Column -->
+         <!-- Copy From Above-->
+    </div>
+</div>
+<script>
+function toggleBurgerMenu() {
+    var menu = document.getElementById("burgerDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.burger-menu')) {
+        var dropdown = document.getElementById("burgerDropdown");
+        if (dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+<footer>
+    <div class="footer-section">
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+      </div>
+      <p class="copyright">© 2025 SHOPCRAFT.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</html>

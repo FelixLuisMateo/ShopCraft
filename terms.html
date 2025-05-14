@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Shop</title>
+    <link rel="stylesheet" href="terms.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="mainmenu1.html" class="nav-link">Home</a>
+            <a href="contactus.html" class="nav-link">Contact Us</a>   
+            <a href="aboutus.html" class="nav-link">About Us</a>  
+            <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="LoginPage.html">Log in or Create account?</a>
+                <a href="settings.html">Settings</a>
+                <a href="orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>
+    <div class="contact-banner" >
+        <h1>TERMS AND CONDITIONS</h1>
+    </div>
+    <main>
+        <div class="main-content">
+        <section class="intro">
+            <div class="intro-text"> 
+            <h1>Your Ultimate Minecraft Shop</h1>
+            <p>Von Ezekiel Lopez
+                Welcome to SHOPCRAFT (“we”, “our”, or “us”). These Terms and Conditions (“Terms”) govern your use of our Minecraft Shop and all purchases made through it. By accessing or using our shop, you agree to be bound by these Terms.
+                <br>
+                1.Eligibility
+                You must have a valid Minecraft account to make purchases. If you are under 18, you must have permission from a parent or legal guardian.
+                <br>
+
+                2.Purchases and Payments
+                All prices are listed in [Currency, e.g., USD or PHP].
+                Payments are processed through [e.g., PayPal, GCash, Stripe]. Ensure your payment method is valid and has sufficient funds.
+                All purchases are final. We do not offer refunds unless required by law or due to a duplicate transaction.
+                <br>
+                3.Digital Goods
+                All items purchased are digital and will be delivered in-game. Delivery may take up to 24 hours depending on server status or technical issues.
+                <br>
+                4.Chargebacks and Fraud
+                Chargebacks are strictly prohibited. Any attempt to issue a chargeback will result in a permanent ban from our Minecraft server and store. We reserve the right to report fraudulent transactions.
+                <br>
+                5.Server Rules
+                By purchasing from our store, you agree to follow all rules of the Minecraft server associated with this shop. Breaking server rules may lead to item revocation without refund.
+                <br>
+                6.Modifications
+                We reserve the right to modify or remove any product, pricing, or these Terms at any time without prior notice. Continued use of the shop after changes constitutes acceptance of the new terms.
+                <br>
+                7.Disclaimer
+                <br>
+                <br>
+
+                We are not affiliated with Mojang AB. Minecraft is a trademark of Mojang AB. All rights to Minecraft belong to Mojang AB.
+                Contact Us
+                <br>
+                For questions or concerns, contact us at:
+                 📧 [vonezekiellopez@gmail.com]
+                 📧 [felixluizmateo@gmail.com] </p>
+            </div>
+        </section>
+        </div>
+    </main>
+<script>
+function toggleBurgerMenu() {
+    var menu = document.getElementById("burgerDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.burger-menu')) {
+        var dropdown = document.getElementById("burgerDropdown");
+        if (dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+<footer>
+    <div class="footer-section">
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+      </div>
+      <p class="copyright">© 2025 SHOPCRAFT.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</html>

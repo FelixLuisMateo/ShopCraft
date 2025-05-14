@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegistrationPage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="mainmenu1.html" class="nav-link">Home</a>
+            <a href="contactus.html" class="nav-link">Contact Us</a>   
+            <a href="aboutus.html" class="nav-link">About Us</a>  
+            <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="LoginPage.html">Log in or Create account?</a>
+                <a href="settings.html">Settings</a>
+                <a href="orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>
+        <div class="border">
+            <form action="LoginPage.html">
+                <table border="0" cellpadding="5">
+                    <tr>
+                        <td colspan="4" style="text-align: center;"><h1>Registration</h1></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 14px;">First Name:</td>
+                        <td><input type="text" name="first_name" required></td>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="last_name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" required></td>
+                        <td>Mobile Number:</td>
+                        <td><input type="tel" name="mobile" required placeholder="09XX-XXXX-XXX" pattern="[0-9]{11}"></td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td><input type="number" name="age" required></td>
+                        <td>Birthdate:</td>
+                        <td><input type="date" name="birthdate" required></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td colspan="3"><input type="text" name="address" size="80" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td colspan="3">
+                            <input type="radio" name="gender" value="Male" required> Male
+                            <input type="radio" name="gender" value="Female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>Username:</td>
+                    <td colspan="1"><input type="text" name="Username" size="80" required></td>
+                </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" id="password" name="password" required></td>
+                        <td>Confirm Password:</td>
+                        <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center">
+                            Already have an account? <a href="LoginPage.html">Login here</a>.
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    <script>
+        function validateForm() {
+            var pw = document.getElementById("password").value;
+            var cpw = document.getElementById("confirm_password").value;
+
+            if (pw !== cpw) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script>
+      function toggleDropdown() {
+          var dropdown = document.getElementById("shopDropdown");
+          dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+      }
+      
+      // Close dropdown if clicked outside
+      window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              for (var i = 0; i < dropdowns.length; i++) {
+                  dropdowns[i].style.display = "none";
+              }
+          }
+      }
+      </script>
+      <script>
+      function toggleBurgerMenu() {
+          var menu = document.getElementById("burgerDropdown");
+          menu.style.display = (menu.style.display === "block") ? "none" : "block";
+      }
+      
+      // Close dropdown if clicked outside
+      window.onclick = function(event) {
+          if (!event.target.matches('.burger-menu')) {
+              var dropdown = document.getElementById("burgerDropdown");
+              if (dropdown) {
+                  dropdown.style.display = "none";
+              }
+          }
+      }
+      </script>
+</body>
+</html>

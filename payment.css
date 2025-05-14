@@ -1,0 +1,304 @@
+body {
+font-family: 'Minecraftia';
+background: url('images/newdirt.jpg') no-repeat center center fixed;
+background-size: cover;
+color: white;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: #2a2a2a;
+display: flex;
+align-items: center;
+justify-content: flex-end; /* Moves items to the right */
+padding: 10px 20px;
+z-index: 1000;
+background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+padding: 10px;
+font-size: 20px;
+}
+
+.logo img {
+width: 150px;
+margin-left: 15px;
+height: auto;
+}
+.logo {
+position: fixed; 
+top: 7px; /* Adjust distance from top */
+left: 20px;
+width: 120px;
+height: auto;
+z-index: 1001; /* Keeps it above other content */
+}
+
+nav {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap: 30px;
+background: transparent; /* Fully transparent */
+}
+.nav-link {
+color: inherit;       /* Inherit the color from parent */
+text-decoration: none; /* Remove underline */
+}
+
+/* Style for the burger menu */
+.burger-menu {
+font-size: 5px;  /* Make it bigger */
+display: block !important; /* Force it to be visible */
+position: relative; /* Ensure it's positioned properly */
+margin-left: auto; /* Push it to the right */
+z-index: 1002; /* Ensure it's above other elements */
+right: 20px;  /* Move it slightly left */
+top: 2px;  /* Keep it in place */
+z-index: 9999;
+background-color: #2a2a2a;
+color: white;
+}
+
+/* Dropdown menu (hidden by default) */
+.burger-dropdown {
+display: none;
+position: absolute;
+right: 0px;
+top: 50px;
+background: rgba(0, 0, 0, 0.8);
+width: 150px;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+z-index: 1000;
+}
+
+/* Dropdown links */
+.burger-dropdown a {
+display: block;
+color: white;
+padding: 10px;
+text-decoration: none;
+font-size: 16px;
+}
+
+/* Hover effect */
+.burger-dropdown a:hover {
+background: rgba(255, 255, 255, 0.2);
+}
+
+
+.account-icon, .burger-menu {
+font-size: 24px;
+cursor: pointer;
+}
+
+.payment-container {
+background-color: #2b2b2b;
+padding: 30px;
+width: 400px;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+margin-top: 100px;
+}
+
+.der .shop-name {
+font-size: 24px;
+text-align: center;
+font-weight: bold;
+margin-bottom: 10px;
+color: #00ff9d;
+}
+
+.checkout-steps {
+display: flex;
+justify-content: space-between;
+margin-bottom: 30px;
+font-size: 14px;
+color: #aaa;
+}
+
+.step {
+flex: 1;
+text-align: center;
+}
+
+.step.completed {
+color: #00ff9d;
+}
+
+.step.current {
+font-weight: bold;
+color: #fff;
+}
+
+.payment-box h2 {
+margin-bottom: 20px;
+text-align: center;
+}
+
+.payment-form .form-group {
+margin-bottom: 15px;
+}
+
+.payment-form label {
+display: block;
+margin-bottom: 5px;
+font-size: 14px;
+}
+
+.payment-form input {
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 6px;
+background-color: #444;
+color: #fff;
+font-size: 14px;
+}
+
+.payment-form input:focus {
+outline: 2px solid #00ff9d;
+}
+
+.form-row {
+display: flex;
+gap: 10px;
+}
+
+.divider {
+text-align: center;
+margin: 20px 0;
+color: #aaa;
+position: relative;
+}
+
+.divider::before,
+.divider::after {
+content: "";
+position: absolute;
+top: 50%;
+width: 40%;
+height: 1px;
+background: #444;
+}
+
+.divider::before {
+left: 0;
+}
+
+.divider::after {
+right: 0;
+}
+
+.gcash-option {
+display: flex;
+align-items: center;
+gap: 10px;
+background-color: #353535;
+padding: 10px;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+
+.gcash-option:hover {
+background-color: #3e3e3e;
+}
+
+.gcash-option img {
+width: 30px;
+height: auto;
+}
+
+.confirm-button {
+margin-top: 20px;
+width: 100%;
+background-color: #00ff9d;
+color: #000;
+padding: 12px;
+border: none;
+border-radius: 6px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+background-color: #00cc7a;
+}
+
+.security-note {
+font-size: 12px;
+color: #aaa;
+margin-top: 15px;
+text-align: center;
+}
+/* footer copy */
+footer {
+background-color: rgba(0, 0, 0, 0.9);
+padding: 40px;
+font-size: 17px;
+color: #ccc;
+text-align: center;
+margin-top: 50px;
+}
+
+.footer-links {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+margin-bottom: 20px;
+}
+
+.footer-links a {
+color: #32CD32;
+text-decoration: none;
+}
+
+.footer-links a:hover {
+text-decoration: underline;
+}
+
+.about {
+max-width: 800px;
+margin: 0 auto 20px;
+color: #ddd;
+line-height: 1.5;
+}
+
+.social-icons {
+margin-top: 15px;
+}
+
+.social-icons a {
+color: #32CD32;
+margin: 0 10px;
+font-size: 18px;
+transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+color: #fff;
+}
+
+footer .copyright {
+margin-top: 20px;
+font-size: 17px;
+color: #888;
+}
+.main-content {
+height: 100vh; /* Full screen content */
+display: flex;
+align-items: center;
+justify-content: center;
+}

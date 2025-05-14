@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LoginPage.css"> 
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="images/Creeper logo.png" alt="Minecraft Logo">
+    </div>
+    <nav>
+        <a href="mainmenu1.html" class="nav-link">Home</a>
+        <a href="contactus.html" class="nav-link">Contact Us</a>   
+        <a href="aboutus.html" class="nav-link">About Us</a>  
+        <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+        <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+        <div class="burger-dropdown" id="burgerDropdown">
+            <a href="LoginPage.html">Log in or Create account?</a>
+            <a href="settings.html">Settings</a>
+            <a href="orders.html">Orders</a>
+        </div>
+    </nav>
+</header>
+    <div class="login-container border">
+      <h1 style="text-align: center;">Login</h1>
+
+      <form action="#">
+        <label for="text">Username</label>
+        <input type="text" id="text" name="username" placeholder="Enter Username" required>
+
+        <label for="password">Password</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" placeholder="Enter password" required>
+          <button type="button" class="toggle-password" onclick="togglePassword(event)">👁</button>
+        </div>
+
+        <div class="rememberme">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+          <a href="ForgetPassword.html">Forgot password?</a>
+        </div>
+        
+        <button type="submit" class="social login">
+        Login
+        <a href="try.html"></a>
+        </button>
+        <h4 style="text-align: center;">Or</h4>
+        
+
+        <a href="https://facebook.com">
+        <button class="social facebook" type="button">
+          <img src="images/Facebook.png">
+          Login with Facebook
+        </button>
+        </a>
+
+        <a href="https://accounts.google.com">
+          <button class="social google" type="button">
+            <img src="images/Google.png" alt="Google logo">
+            Login with Google
+          </button>
+        </a>      
+
+        <center>
+          Don't have an account?
+          <a href="RegistrationPage.html">Register here</a>.
+        </center>
+      </form>
+    </div>
+
+    <script>
+      function togglePassword(event) {
+        event.preventDefault();
+        const passwordInput = document.getElementById("password");
+        const toggleBtn = event.currentTarget;
+        const isPassword = passwordInput.getAttribute("type") === "password";
+        passwordInput.setAttribute("type", isPassword ? "text" : "password");
+        toggleBtn.textContent = isPassword ? "👁" : "👁";
+      }
+    </script>
+    <script>
+      function toggleDropdown() {
+          var dropdown = document.getElementById("shopDropdown");
+          dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+      }
+      
+      // Close dropdown if clicked outside
+      window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              for (var i = 0; i < dropdowns.length; i++) {
+                  dropdowns[i].style.display = "none";
+              }
+          }
+      }
+      </script>
+      <script>
+      function toggleBurgerMenu() {
+          var menu = document.getElementById("burgerDropdown");
+          menu.style.display = (menu.style.display === "block") ? "none" : "block";
+      }
+      
+      // Close dropdown if clicked outside
+      window.onclick = function(event) {
+          if (!event.target.matches('.burger-menu')) {
+              var dropdown = document.getElementById("burgerDropdown");
+              if (dropdown) {
+                  dropdown.style.display = "none";
+              }
+          }
+      }
+      </script>
+</body>
+</html>

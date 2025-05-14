@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Shop</title>
+    <link rel="stylesheet" href="mainmenu1.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="mainmenu1.html" class="nav-link">Home</a>
+            <a href="contactus.html" class="nav-link">Contact Us</a>   
+            <a href="aboutus.html" class="nav-link">About Us</a>  
+            <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="LoginPage.html">Log in or Create account?</a>
+                <a href="settings.html">Settings</a>
+                <a href="orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>    
+    
+    <main>
+        <section class="intro">
+            <div class="intro-text"> <h1>DISCOVER THE WORLD OF MINECRAFT</h1>
+            <p>Build anything you can imagine, uncover eerie mysteries, and survive the night in the ultimate sandbox game. In Minecraft, every playthrough is different, and unforgettable adventures await behind every corner. Explore and craft your way through an infinite world that's yours to shape, one block at a time. </p>
+            </div>
+            <div class="scrollable-shop">
+                <img src="images/MinecraftDungeons1.jpg" alt="Minecraft Image 1">
+                <img src="images/MinecraftImage2.jpg" alt="Minecraft Image 2">
+                <img src="images/MinecraftImage3.jpg" alt="Minecraft Image 3">
+                <img src="images/MinecraftImage4.jpg" alt="Minecraft Image 4">
+                <img src="images/MinecraftImage5.jpg" alt="Minecraft Image 5">
+                <img src="images/MinecraftImage6.jpg" alt="Minecraft Image 6">
+            </div>
+        </section>
+        
+        <section class="featured">
+            <h2>Minecraft</h2>
+            <div class="featured-items">
+                <img src="images/FeaturedImage1.jpg">
+                <img src="images/FeaturedImage2.jpg">
+                <img src="images/FeaturedImage3.jpg">
+            </div>
+        </section>
+        
+        <section class="dungeons">
+            <h2>Limited Edition Toys</h2>
+            <div class="collectible-container">
+                <div class="scrollable-shop-left">
+                    <img src="images/Creeper.png" alt="Minecraft Image 1">
+                    <img src="images/Bee.png" alt="Minecraft Image 2">
+                    <img src="images/Sheep.png" alt="Minecraft Image 3">
+                    <img src="images/Skeleton.png" alt="Minecraft Image 4">
+                    <img src="images/Dennis.png" alt="Minecraft Image 5">
+                    <img src="images/Evoker.png" alt="Minecraft Image 6">
+                    <img src="images/thumbs-HM-07-Redstone.png" alt="Minecraft Image 7">
+                    <img src="images/thumbs-HM-08-Pink-Wool.png" alt="Minecraft Image 8">
+                    <img src="images/thumbs-HM-09-Diamond.png" alt="Minecraft Image 9">
+                    <img src="images/thumbs-HM-10-Stone.png" alt="Minecraft Image 10">
+                    <img src="images/thumbs-HM-11-Gold.png" alt="Minecraft Image 11">
+                    <img src="images/thumbs-HM-12-Grass.png" alt="Minecraft Image 12">
+                </div>
+                <div class="image-box">
+                    <img src="images/limited.jpg" alt="Shop Image" class="side-image">
+                </div>
+        </section>
+
+        <section class="legends">
+            <h2>6 Collectible Toys</h2>
+            <h3>With exclusive Minecraft Skins</h3>
+            <div class="collectible-container">
+                <div class="scrollable-shop-left">
+                    <img src="images/collect1.jpg">
+                    <img src="images/collect2.jpg">
+                    <img src="images/collect3.jpg">
+                    <img src="images/collect4.jpg">
+                    <img src="images/collect5.jpg">
+                    <img src="images/collect6.jpg">
+                </div>
+                <div class="image-box">
+                    <img src="images/collect7.jpg" alt="Shop Image" class="side-image">
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+<script>
+function toggleBurgerMenu() {
+    var menu = document.getElementById("burgerDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.burger-menu')) {
+        var dropdown = document.getElementById("burgerDropdown");
+        if (dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+<footer>
+    <div class="footer-section">
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+      </div>
+      <p class="copyright">© 2025 SHOPCRAFT.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</html>

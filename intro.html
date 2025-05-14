@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minecraft Shop - Home</title>
+  <link rel="stylesheet" href="intro.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-text">Loading Minecraft Shop...</div>
+  </div>
+
+  <div class="hero" style="display: none;">
+    <div class="hero-content">
+      <img src="images/minecraft-logo-presented-white.webp" alt="Minecraft Shop Logo" class="logo" />
+      <h1>Welcome to the Minecraft Shop</h1>
+      <p>Buy your favorite Toys, Armor, Tools, Blocks, and more!</p>
+      <a href="mainmenu1.html" class="enter-btn">Enter the Shop</a>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      const hero = document.querySelector(".hero");
+      setTimeout(() => {
+        loader.style.display = "none";
+        hero.style.display = "flex";
+      }, 1500);
+    });
+  </script>
+  
+</body>
+<footer>
+  <div class="footer-section">
+    <div class="footer-links">
+      <a href="#">Terms and Conditions</a>
+    </div>
+    <p class="copyright">© 2025 SHOPCRAFT.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+</html>

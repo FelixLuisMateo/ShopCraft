@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPCRAFT - Payment</title>
+  <link rel="stylesheet" href="payment.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <img src="images/Creeper logo.png" alt="Minecraft Logo">
+        </div>
+        <nav>
+            <a href="mainmenu1.html" class="nav-link">Home</a>
+            <a href="contactus.html" class="nav-link">Contact Us</a>   
+            <a href="aboutus.html" class="nav-link">About Us</a>  
+            <a href="shopmenu.html" class="nav-link">Shop</a>         
+
+            <button class="burger-menu" onclick="toggleBurgerMenu()">&#9776;</div>
+            <div class="burger-dropdown" id="burgerDropdown">
+                <a href="LoginPage.html">Log in or Create account?</a>
+                <a href="settings.html">Settings</a>
+                <a href="orders.html">Orders</a>
+            </div>
+        </nav>
+    </header>
+<div class="main-content">
+    <div class="payment-container">
+        <div class="der">
+        <div class="shop-name">SHOPCRAFT</div>
+        </div>
+
+        <section class="payment-box">
+        <h2>Payment Details</h2>
+        <form class="payment-form">
+            <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group">
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="XXX" required>
+            </div>
+            </div>
+
+            <div class="form-group">
+            <label for="name">Name on Card</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="divider">OR</div>
+
+            <div class="gcash-option">
+            <img src="images/gcash.png" alt="GCash logo">
+            <span>Pay with GCash</span>
+            </div>
+
+            <button type="submit" class="confirm-button">Confirm Payment</button>
+
+            <div class="security-note">
+            🔒 Secure payment processing with 256-bit encryption
+            </div>
+        </form>
+        </section>
+    </div>
+</div>
+<script>
+function toggleBurgerMenu() {
+    var menu = document.getElementById("burgerDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+window.onclick = function(event) {
+    if (!event.target.matches('.burger-menu')) {
+        var dropdown = document.getElementById("burgerDropdown");
+        if (dropdown) {
+            dropdown.style.display = "none";
+        }
+    }
+}
+</script>
+</body>
+</html>
