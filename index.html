@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft Bedrock Loading</title>
+  <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+  <link rel="stylesheet" href="bedrock-loading.css">
+  <script>
+    // Redirect after 10 seconds
+    setTimeout(() => {
+      window.location.href = "intro.html"; // Change if needed
+    }, 15000); // 10 seconds
+
+    // Animate segments over 10 seconds (500ms per segment)
+    window.onload = () => {
+      const segments = document.querySelectorAll(".segment");
+      segments.forEach((seg, i) => {
+        setTimeout(() => {
+          seg.classList.add("active");
+        }, i * 500); // 20 segments * 500ms = 10000ms
+      });
+    };
+  </script>
+</head>
+<body>
+  <div class="loading-background">
+    <div class="loading-box">
+      <h2 class="loading-title">Generating world</h2>
+      <div class="loading-message-box">
+        <p class="loading-message">I went window shopping today! I bought four windows.</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-segments">
+          <!-- 20 segments -->
+          <div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div>
+          <div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div>
+          <div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div>
+          <div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div>
+          <div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div>
+          <div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div><div class="segment"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
